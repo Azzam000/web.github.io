@@ -1,10 +1,757 @@
-<!-- index.html -->
-<html>
-  <head>
-    <title>موقعي الأول</title>
-  </head>
-  <body>
-    <h1>مرحباً بالعالم!</h1>
-    <p>هذا هو أول موقع لي باستخدام GitHub Pages.</p>
-  </body>
-</html>
+<html><head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=512">
+			<meta charset="UTF-8">
+	<meta name="Author" content="EchoLog1"/>
+	<meta name="copyright" content="LEAKZ"/>
+	<meta name="description" content="LEAKZ"/>
+	<link href="https://fonts.googleapis.com/css?family=Iceland:400,700" rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Iceland:400,700" rel='stylesheet' type='text/css'>
+	<meta property="og:image" content="">
+		<style type="text/css">
+			body {
+				overflow:hidden;
+				background-color: #000000;
+				background-repeat:no-repeat;
+				background-size: 100% ;
+				background-position:top center;
+				margin: 0px;
+				cursor:none;
+				font-family: Iceland, sans-serif;
+			}
+			a{
+				text-decoration: none;
+			}
+			h1{
+			font-family: Iceland, sans-serif;
+			font-size:90px;
+			color:#fff;
+			margin:0px 0px 0px;
+			
+			}
+			h2{
+			font-family: Iceland, sans-serif;
+			font-size:40px;
+			color:#000;
+			margin: 0px;
+			text-shadow: 0 0 3px #fff;
+			
+			}
+			p{
+			color:#fff;
+			font-size:25px;
+			margin: 0px;
+			text-shadow: 0 0 3px #ff0099;
+
+			}
+			.fot{
+			font-family: Iceland, sans-serif;
+			font-size:14px;
+			color:#fff;
+			margin: 0px;
+			text-shadow: 0 0 3px #000, 0px 0px 5px #000;
+			}
+			 h1{
+			color:#000;
+			text-shadow: 0 0 5px #fff;
+		}
+		.greets{
+	font-family: Arial, sans-serif;
+	line-height: 24px;
+	font-size: 11px;
+	width: 50%;
+	background: #000;
+	opacity: 0.9;
+	text-transform: uppercase;
+	z-index: 9999;
+	border-radius:10px;
+	-moz-box-shadow: 1px 0px 2px #000;
+	-webkit-box-shadow: 1px 0px 2px #000;
+	box-shadow: 1px 0px 2px #000;
+}
+		</style>
+	</head> 
+	<div id="I301_html">
+
+<script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+
+<script type="text/javascript">setTimeout("$('#loading').fadeOut(5000);", 10000);  </script>
+
+<style type="text/css">#loading{position:fixed;top:0;left:0;padding-top:0px;background-color:#000;width:100%;height:100%;color:black;z-index:9000;overflow:hidden;}</style>
+ 
+<div id="loading">
+<body onload="document.f.p.focus()" topmargin="0" leftmargin="0" bgcolor="#000000" marginheight="0" marginwidth="0">
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tbody><tr> 
+
+
+</tr>
+	
+<tr>
+
+
+
+</tr>
+</tbody></table> 
+<font id="ResponseData" color="#ff99cc">
+<pre><script type="text/javascript">
+TypingText = function(element, interval, cursor, finishedCallback) {
+  if((typeof document.getElementById == "undefined") || (typeof element.innerHTML == "undefined")) {
+    this.running = true;	// Never run.
+    return;
+  }
+  this.element = element;
+  this.finishedCallback = (finishedCallback ? finishedCallback : function() { return; });
+  this.interval = (typeof interval == "undefined" ? 100 : interval);
+  this.origText = this.element.innerHTML;
+  this.unparsedOrigText = this.origText;
+  this.cursor = (cursor ? cursor : "");
+  this.currentText = "";
+  this.currentChar =0;
+  this.element.typingText = this;
+  if(this.element.id == "") this.element.id = "typingtext" + TypingText.currentIndex++;
+  TypingText.all.push(this);
+  this.running = false;
+  this.inTag = false;
+  this.tagBuffer = "";
+  this.inHTMLEntity = false;
+  this.HTMLEntityBuffer = "";
+}
+TypingText.all = new Array();
+TypingText.currentIndex = 0;
+TypingText.runAll = function() {
+  for(var i = 0; i < TypingText.all.length; i++) TypingText.all[i].run();
+}
+TypingText.prototype.run = function() {
+  if(this.running) return;
+  if(typeof this.origText == "undefined") {
+    setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);	// We haven't finished loading yet.  Have patience.
+    return;
+  }
+  if(this.currentText == "") this.element.innerHTML = "";
+//  this.origText = this.origText.replace(/<([^<])*>/, "");     // Strip HTML from text.
+  if(this.currentChar < this.origText.length) {
+    if(this.origText.charAt(this.currentChar) == "<" && !this.inTag) {
+      this.tagBuffer = "<";
+      this.inTag = true;
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.origText.charAt(this.currentChar) == ">" && this.inTag) {
+      this.tagBuffer += ">";
+      this.inTag = false;
+      this.currentText += this.tagBuffer;
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.inTag) {
+      this.tagBuffer += this.origText.charAt(this.currentChar);
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.origText.charAt(this.currentChar) == "&" && !this.inHTMLEntity) {
+      this.HTMLEntityBuffer = "&";
+      this.inHTMLEntity = true;
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.origText.charAt(this.currentChar) == ";" && this.inHTMLEntity) {
+      this.HTMLEntityBuffer += ";";
+      this.inHTMLEntity = false;
+      this.currentText += this.HTMLEntityBuffer;
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.inHTMLEntity) {
+      this.HTMLEntityBuffer += this.origText.charAt(this.currentChar);
+      this.currentChar++;
+      this.run();
+      return;
+    } else {
+      this.currentText += this.origText.charAt(this.currentChar);
+    }
+    this.element.innerHTML = this.currentText;
+    this.element.innerHTML += (this.currentChar < this.origText.length - 1 ? (typeof this.cursor == "function" ? this.cursor(this.currentText) : this.cursor) : "");
+    this.currentChar++;
+    setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);
+  } else {
+	this.currentText = "";
+	this.currentChar = 0;
+        this.running = false;
+        this.finishedCallback();
+  }
+}
+</script>
+<script>
+function disableselect(e){return false}
+
+function reEnable(){return true}
+
+//if IE4+
+document.onselectstart=new Function ("return false")
+
+//if NS6
+if (window.sidebar){
+document.onmousedown=disableselect
+document.onclick=reEnable
+}
+</script>
+<script>
+var message="";
+function clickIE()
+
+{if (document.all)
+{(message);return false;}}
+
+function clickNS(e) {
+if
+(document.layers||(document.getElementById&&!document.all))
+{
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers)
+{document.captureEvents(Event.MOUSEDOWN);document.  onmousedown=clickNS;}
+else
+{document.onmouseup=clickNS;document.oncontextmenu  =clickIE;}
+
+document.oncontextmenu=new Function("return false")
+</script>
+
+<table style=" background-repeat: no-repeat;"  align="right" border="0" width="100%" >
+
+<br>
+
+<tbody><tr>
+<td  valign="top"><p id="hack" >
+
+<br>
+<br>
+<font style="color:#ffffff;text-shadow:#FF0099 0px 0px 10px"> &nbsp;&nbsp;&nbsp;&nbsp;<b>[LKZ] Greetings User,</font> <br>
+<font style="color:#ffffff;text-shadow:#FF0099 0px 0px 10px"> &nbsp;&nbsp;&nbsp;&nbsp;<b>[LKZ] Resistance is futile... </font><br>
+<font style="color:#ffffff;text-shadow:#FF0099 0px 0px 10px"> &nbsp;&nbsp;&nbsp;&nbsp;<b>[LKZ] Together, we conquer the digital world!</font><br>
+<font style="color:#ffffff;text-shadow:#FF0099 0px 0px 10px"> &nbsp;&nbsp;&nbsp;&nbsp;<b>[LKZ] Heil <font style="color:red;text-shadow:#000 0px 0px 3px">Echo</font><font style="color:white;text-shadow:#000 0px 0px 3px">Log</font>        </font> <br>
+					 <font color="White"> 
+	
+          
+</p></tr>
+</tbody></table>                 </div> 
+<br>
+
+<script type="text/javascript">
+new TypingText(document.getElementById("hack"), 50, function(i) { var ar = new Array("_",""); return " " + ar[i.length % ar.length]; });
+TypingText.runAll();
+
+</script>
+
+    <style> 
+ 
+      td
+ 
+      {
+ 
+        background-color: #000000;
+ 
+        font-family: Courier New;
+ 
+        font-size:20px;
+ 
+        color:#000000;
+ 
+        border-color: #000000;
+ 
+        border-width:1pt;
+ 
+        border-style:solid;
+ 
+        border-collapse:collapse;
+ 
+        padding:0pt 3pt;
+ 
+        vertical-align:top;
+ 
+      }
+ 
+      table
+ 
+      {
+ 
+        border-color: #88aace;
+ 
+        border-width:0pt 1pt;
+ 
+        border-style:dash;
+ 
+      }
+ 
+      A:Link, A:Visited
+ 
+      {
+ 
+        color: #88aace;
+ 
+      }
+ 
+      A.no:Link, A.no:Visited
+ 
+      {
+ 
+        color: #88aace;
+ 
+        text-decoration: none;
+ 
+      }
+ 
+      A:Hover, A:Visited:Hover , A.no:Hover, A.no:Visited:Hover
+ 
+      {
+ 
+        color: #88aace;
+ 
+        background-color:#2e2e2e;
+ 
+        text-decoration:
+ 
+        overline underline;
+ 
+      }
+ 
+      .style1
+ 
+      {
+ 
+        color: #88aace
+ 
+      }
+ 
+      .style2
+ 
+      {
+ 
+        color: 1f1f1f
+ 
+      }
+ 
+      body
+ 
+      {
+ 
+        color:white;
+         
+        background-position:right;
+ 
+        background-attachment:fixed;
+ 
+        </div>
+ 
+      }
+ 
+    </style>
+        
+ 
+</div>
+		
+		<title>LEAKZ</title>
+		
+		 
+		<link rel="stylesheet" href="gs/style.css" type="text/css" media="all">
+		
+    	<link rel="icon" href="pics/Leakz.png" type="image/x-icon">
+		<script src="loops/script.js"></script>
+		<script>
+document.addEventListener("visibilitychange", function() {
+  if (document.visibilityState === "hidden") {
+    document.title = "Come back bitch ."; 
+  } else {
+    document.title = "Leakz.win"; 
+  }
+});
+</script>
+</head><body>
+		<div id="stars"></div>
+		<div id="stars2"></div>
+		<div id="stars3"></div>
+
+		<header>
+			<div class="title">
+				  
+					<style>
+					
+				div {
+				  cursor: url('pics/mew2.png'), auto;	
+				}
+				
+				
+				a {
+				  text-decoration: none;
+				}
+
+				a#link {
+				  margin-top: 8px;
+				  color: white;
+				  text-decoration: none;
+				  font-weight: bold;
+				}
+
+				a#link:hover {
+				  color: #B01EFF;
+				}
+
+				.button {
+				  cursor: pointer;
+				  width: 100px;
+				  height: 15px;
+				  background: white;
+				  border-radius: 20px;
+				  background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+				  animation: gradient 2s infinite 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.2) forwards;
+				  padding-top: 6px;
+				  display: flex;
+				  flex-direction: row;
+				  justify-content: center;
+				  align-items: center;  
+				  font-size: 15px;
+				}
+
+				@keyframes gradient {
+				  0% { background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%) }
+				  10% { background: linear-gradient(90deg, #d53369 0%, #daae51 100%) }
+				  20% { background: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%) }
+				  30% { background: linear-gradient(90deg, #FDBB2D 0%, #22C1C3 100%) }
+				  40% { background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%) }
+				  50% { background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%) }
+				  60% { background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%) }
+				  70% { background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%) }
+				  80% { background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%) }
+				  90% { background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%) }
+				  100% { background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%) }
+				}
+					</style>
+			
+			<br><br><br><br>
+				<img style="margin-top:-70px; margin-bottom: -75px; box-shadow: 0 0 25px 15px rgb(136, 0, 0);" alt="logo" usemap="#logomap" width="512" src="https://leakz.win/BNRSEXYILOVEYOUFUCKYOU123.png">
+
+
+
+				<map name="logomap"><area shape="rect" coords="118,83,392,210" alt="go to market" href="YOUAREANIDIOT-TOUCHINGRETARDSINPUBLICPLACES.php"></map>	
+				<br><br><br><br><br>
+				<div>
+				    <a id="telegram_link" class="tooltip" target="_blank" href="https://t.me/leakz3"><img class="zoom" alt="Telegram" width="64" src="https://leakz.win/ILOVETELEGRAMFORSEX.png"><span id="telegram_text" class="tooltiptext">Telegram</span></a>
+					<a id="discord_link" class="tooltip" target="_blank" href="https://discord.gg/telnet"><img class="zoom" alt="Discord" width="64" src="https://leakz.win/FUCKYOUDISCORDIHATEDISCORD.png"><span id="discord_text" class="tooltiptext">Discord</span></a>
+				</div>		
+				<p class="blink" id="ads_string"></p>
+			</div>
+		</header>
+
+		<div class="divTables">
+			<div class="divTable" style="max-width: 100%;">
+				<div class="divTableHeading">
+					<div id="status-title" class="divTableHeadCyan" style="text-align: center">LEAKZ</div>
+				</div>		
+				<div class="divTableBody">
+					<div class="divTableCellInfo" style="text-align: center;">
+						<div>
+						<p>⚫ *United We Command* ⚫</p>						
+							
+							
+							<p>🔴 Leakz.win [VII]</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="divTables">
+			<div class="divTable2">
+				<div class="divTableHeading">
+					<div class="divTableHeadRed">CEO</div>
+				</div>		
+				<div class="divTableBody">
+				<div class="divTableRow">
+						<a class="divTableCell red-td" href="https://leakz.win/EchoLog.htm">EchoLog</a>
+					</div>
+					
+					
+					
+				</div><div class="divTableBody">
+				<div class="divTableRow">
+						
+					</div>
+					
+					
+					
+				</div><div class="divTableBody">
+				<div class="divTableRow">
+						
+					</div>
+					
+					
+					
+				</div><div class="divTableBody">
+				<div class="divTableRow">
+						
+					</div>
+					
+					
+					
+				</div><div class="divTableBody">
+				<div class="divTableRow">
+						
+					</div>
+					
+					
+					
+				</div><div class="divTableBody">
+				<div class="divTableRow">
+						
+					</div>
+					
+					
+					
+				</div>
+			</div><div class="divTable2">
+				<div class="divTableHeading">
+					<div class="divTableHeadRed">Plans / Cards</div>
+				</div>		
+				<div class="divTableBody">
+				<div class="divTableRow">
+						<a class="divTableCell red-td" href="https://leakz.win/prices.htm"> Click!</a>
+					</div>
+					
+					
+					
+				</div><div class="divTableBody">
+				<div class="divTableRow">
+						
+					</div>
+					
+					
+					
+				</div><div class="divTableBody">
+				<div class="divTableRow">
+						
+					</div>
+					
+					
+					
+				</div><div class="divTableBody">
+				<div class="divTableRow">
+						
+					</div>
+					
+					
+					
+				</div><div class="divTableBody">
+				<div class="divTableRow">
+						
+					</div>
+					
+					
+					
+				</div><div class="divTableBody">
+				<div class="divTableRow">
+						
+					</div>
+					
+					
+					
+				</div><div class="divTableBody">
+				<div class="divTableRow">
+						
+					</div>
+					
+					
+					
+				</div>
+			</div><div class="divTable2">
+				<div class="divTableHeading">
+					<div class="divTableHeadRed">Leakz NMAP</div>
+				</div>		
+				<div class="divTableBody">
+				<div class="divTableRow">
+						
+					</div>
+					
+					
+					
+				</div><div class="divTableBody">
+				<div class="divTableRow">
+						
+					</div>
+					
+					
+					
+				</div><div class="divTableBody">
+				<div class="divTableRow">
+						
+					</div>
+					
+					
+					
+				</div><div class="divTableBody">
+				<div class="divTableRow">
+						
+					</div>
+					
+					
+					
+				</div><div class="divTableBody">
+				<div class="divTableRow">
+						
+					</div>
+					
+					
+					
+				</div><div class="divTableBody">
+				<div class="divTableRow">
+						
+					</div>
+					
+					
+					
+				</div><div class="divTableBody">
+				<div class="divTableRow">
+						
+					</div>
+					
+					
+					
+				</div><div class="divTableBody">
+				<div class="divTableRow">
+						<a class="divTableCell red-td" href="https://leakz.win/nmap.php"> Click!</a>
+					</div>
+					
+					
+					
+				</div><div class="divTableBody">
+				<div class="divTableRow">
+						
+					</div>
+					
+					
+					
+				</div>
+			</div><div class="divTable2">
+				<div class="divTableHeading">
+					<div class="divTableHeadRed">Leakz Email Breach Finder</div>
+				</div>		
+				<div class="divTableBody">
+				<div class="divTableRow">
+						
+					</div>
+					
+					
+					
+				</div><div class="divTableBody">
+				<div class="divTableRow">
+						
+					</div>
+					
+					
+					
+				</div><div class="divTableBody">
+				<div class="divTableRow">
+						
+					</div>
+					
+					
+					
+				</div><div class="divTableBody">
+				<div class="divTableRow">
+						
+					</div>
+					
+					
+					
+				</div><div class="divTableBody">
+				<div class="divTableRow">
+						
+					</div>
+					
+					
+					
+				</div><div class="divTableBody">
+				<div class="divTableRow">
+						
+					</div>
+					
+					
+					
+				</div><div class="divTableBody">
+				<div class="divTableRow">
+						
+					</div>
+					
+					
+					
+				</div><div class="divTableBody">
+				<div class="divTableRow">
+						<a class="divTableCell red-td" href="https://leakz.win/breach.html"> Click!</a>
+					</div>
+					
+					
+					
+				</div><div class="divTableBody">
+				<div class="divTableRow">
+						
+					</div>
+					
+					
+					
+				</div>
+			</div>
+			
+			
+			
+
+				
+			
+			
+			<div class="divTable2">
+				<div class="divTableHeading">
+					<div class="divTableHeadRed">HostExamine~</div><div class="divTableHeadRed">~ 5M CFX   Finder</div>
+				</div>
+				<div class="divTableBody">
+					<div class="divTableRow">	
+						<a class="divTableCell red-td" href="https://leakz.win/get.php"> Click!</a><a class="divTableCell red-td" href="https://leakz.win/CFX.html"> Click!</a>
+					</div>
+					
+					
+				</div>
+			</div>
+			
+			
+		</div>
+	
+		
+		<div class="divTables">
+			<div class="divTables">
+			<div class="divTable2">
+				<div class="divTableHeading">
+				
+					<img height="100" width="100" draggable="false" class="u_ee11cbb19052e40b07aac0ca060c23ee_emoji__J40L7" src="https://cdn.discordapp.com/emojis/1142171576586993825.gif?size=96&amp;quality=lossless">
+				</div>
+				<div class="divTableBody">
+					<div class="divTableRow">
+						
+					</div>
+					<div class="divTableRow">
+						<a class="divTableCell magneta-td" href="https://discord.gg/telnet">DISCORD.GG/TELNET</a>
+					</div>
+					<div class="divTableRow">
+						
+					</div>
+				</div>
+			</div>
+		
+			
+			</div>
+		
+			
+			</div>
+
+		<footer>						  			
+			<p style="text-align: center;"><br>
+			Leakz.win</p>			
+		</footer>
+		
+		
+<style type="text/css"></style></body></html>
